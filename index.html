@@ -1,41 +1,561 @@
-<!DOCTYPE html>
-<html>
-    <body style="background-color:#1a1b1a">
-        <style>
-		h1 {
-			font-family: Lucida Sans Unicode;
-			font-size: 0.9em;
-		}
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Macweese.com">
+        <meta name="description" content="Macweese | UW Madison | Software Engineer">
+        <meta name="author" content="Macweese">
+        <meta name="description" content="Macweese | Software Engineer"/>
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Macweese Personal Site" />
+        <meta property="og:description" content="Macweese | Software Engineer" />
 
-		a {
-			text-decoration:none;
-		}
 
-		a:link {
-  			color: #57a2de;
- 			background-color: transparent;
-			text-decoration: none;
-		}
+        <meta property="og:site_name" content="Macweese | Software Engineer"/>
 
-		a:visited {
-			  color: #57a2de;
-			  background-color: transparent;
-			  text-decoration: none;
-		}
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-		a:hover {
- 			color: #d9d9d9;
- 			background-color: transparent;
-		  	text-decoration: none;
-		}
-        </style>
-        <a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Kanini clan members.txt"> <h1>Kanini clan members</h1></a>
+	    <title>Macweese - Personal website</title>
+
+
+        <!-- CSS -->
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+        <link href="assets/css/animate.css" rel="stylesheet">
+
+
+        <!-- Custom styles CSS -->
+	    <link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+        <script src="assets/js/modernizr.custom.js"></script>
+
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107870296-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-107870296-1');
+        </script>
+
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    </head>
+
+    <body>
+
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status"></div>
+        </div>
+
+        <!-- Home start -->
+
+	    <section id="home" class="pfblock-image screen-height">
+            <div class="home-overlay"></div>
+            <div class="intro">
+                <div class="console start">
+                    <span id="caption"></span><span id="cursor">|</span>
+                </div>
+                <h1><span class="wow bounceInDown" data-wow-delay="5.50s">Inspiring Software Engineer <br />
+                <h1><span class="wow bounceInDown" data-wow-delay="6.50s">& Student</span></h1>
+            </div>
+
+            <a href="#about">
+                <div class="wow scroll-down bounceInUp" data-wow-delay="7.25s" data-wow-duration="1s">
+                    <span>
+                          <i class="fa fa-angle-double-down fa-2x"></i>
+                      </span>
+                </div>
+            </a>
+
+	</section>
+
+    <!-- Home end -->
+
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Macweese</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#portfolio">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#github">Dev</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+	<!-- about start -->
+
+	<section id="about" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">About Me</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Self taught software engineer with passion for games and technology.
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-3">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-rocket"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Engineering</h3>
+							<div class="iconbox-desc">
+								I'm a curious person who enjoys creating and reverse-engineering pieces of technology.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-grid"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">My Intrests</h3>
+							<div class="iconbox-desc">
+							    I love games. I love technology. I'm always looking to learn new things and have fun along the way.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-shuffle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Groups</h3>
+							<div class="iconbox-desc">
+								I'm a contributer to the open-source community projects <a href="https://runelite.net/" target="_blank">RuneLite</a> & <a href="https://openosrs.com/" target="_blank">OpenOSRS</a>, and a revered member of <a href="https://osbot.org/" target="_blank">OSBot</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-question"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Questions?</h3>
+							<div class="iconbox-desc">
+								You can explore my <a href="#portfolio">projects</a> here. If you would like to get in contact with me, you can find my <a href="#contact">contact</a> information here.
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- .row -->
+			</div>
+			<!-- .container -->
+	</section>
+
+	<!-- about end -->
+
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Projects</h2>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- .row -->
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-offset-1 col-md-5">
+					<div class="grid wow zoomIn">
+						<a href="https://github.com/open-osrs" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/1.png" class="myprojectimages" alt="OpenOSRS" />
+								<figcaption>
+									<h2>Open<span>OSRS</span></h2>
+									<p>Open Sourced game client with more funcitonality and less restriction for MMORPG OldSchool RuneScape</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+
+				<div class="col-xs-10 col-sm-5 col-md-5">
+
+					<div class="grid wow zoomIn">
+						<a href="https://github.com/runelite/runelite" target="_blank">
+							<figure class="effect-bubba">
+								<img src="assets/images/runescape_oldschool.jpg" class="myprojectimages" alt="Blok"/>
+								<figcaption>
+									<h2>Rune<span>Lite</span></h2>
+									<p>RuneLite is an open source cleint for the popular MMO OldSchool RuneScape.</p>
+								</figcaption>
+							</figure>
+						</a>
+					</div>
+
+				</div>
+
+
+
+		<!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+
+	<!-- Skills start -->
+
+	<section class="pfblock pfblock-gray" id="skills">
+		<div class="container">
+			<div class="row skills">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title">My Skills</h2>
+						</div>
+					</div>
+				</div>
+				<!-- .row -->
+				<div class="col-sm-6 col-md-6 text-center">
+					<span data-percent="70" class="chart easyPieChart">
+          		<span class="percent">70</span>
+					</span>
+					<h3 class="text-center">Programming</h3>
+				</div>
+				<div class="col-sm-6 col-md-6 text-center">
+					<span data-percent="100" class="chart easyPieChart">
+              <span class="percent">100</span>
+					</span>
+					<h3 class="text-center">Hard Working</h3>
+				</div>
+				<div class="col-xs-12">
+					<hr>
+				</div>
+
+
+				<div class="col-md-6 text-center">
+					<div class='flipInY col-sm-6 col-sm-offset-3'>
+						<h2>Programming</h2>
+					</div>
+					<div class="bars">
+						<ul class="skills">
+							<li>
+                <i class="devicon-mysql-plain-wordmark"></i>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" style="width:80%">Java</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".5s" style="width:20%">JavaScript</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".5s" style="width:10%">ASM</span>
+							</li>
+
+						</ul>
+					</div>
+					<br>
+				</div>
+
+
+				<div class="col-md-6 text-center">
+					<div class=' flipInY'>
+						<h2>Other</h2>
+					</div>
+					<div class="bars">
+						<ul class="skills">
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" style="width:95%">Windows</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".5s" style="width:30%">MYSQL</span>
+							</li>
+							<li>
+								<span class="percent-bar percent-bar-fonts wow fadeInLeft" data-wow-delay=".5s" style="width:70%">Excel</span>
+							</li>
+							
+						</ul>
+					</div>
+					<br>
+				</div>
+			</div>
+
+			<!--End row -->
+
+		</div>
+
+	</section>
+
+	<!-- Skills end -->
+	
+		<!-- Github start -->
+
+	<section id="github" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Development</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Placeholder for current smaller projects & plugins
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+		
+
+				<div class="col-sm-6">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-file-code"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Clan Plugin</h3>
+							<div class="iconbox-desc">
+								Log and reveal players rendered in environment who are affiliated with respective clans. Supports user tracking persistent through attempts to disguise one-self such as name-changes.
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-6">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-screen-desktop"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">MultiBox</h3>
+							<div class="iconbox-desc">
+								Multibox plugin & standalone executable designed for RuneLite and OpenOSRS with cross-network master-slave functionality. Progress 200 accounts with the effort of playing one!
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="col-sm-6">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-note"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Account logger</h3>
+							<div class="iconbox-desc">
+								Automatically log the date, time, connection duration & IP of your device to the OSRS server, encrypted and saved to your account file in your .runelite directory.
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-sm-6">
+					<div class="iconbox wow slideInRight panel-height">
+						<div class="iconbox-icon">
+							<span class="icon-graph"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Player metrics</h3>
+							<div class="iconbox-desc">
+								Webscraper — Track players connected to OSRS servers, filter by region, activity, period, game updates and more! Analytics useful for extracting market & game data.
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- .container -->
+	</section>
+
+	<!-- Github end -->
+
+	<!-- List start -->
+
+	<section id="list" class="pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<div class="pfblock-line"></div>
+						<h2 class="pfblock-title">Clan Namelist</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Kanini clan members.txt"> Kanini clan members</a></br>
         
-        <a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Frontline clan members.txt"> <h1>Frontline clan members</h1> </a>
+							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Frontline clan members.txt"> Frontline clan members</a></br>
         
-        <a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Solidtag clan members.txt"> <h1>Solidtag clan members</h1> </a>
+							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Solidtag clan members.txt"> Solidtag clan members</a></br>
         
-        <a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Wolves clan members.txt"> <h1>Wolves clan members</h1> </a>
+							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/Wolves clan members.txt"> Wolves clan members </a></br>
+						</div>
+					</div>
 
-    </body>
+				</div>
+
+			</div>
+				
+		<!-- .container -->
+	</section>
+
+	<!-- List end -->
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Contact</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Feel free to contact me if you have any interesting work or projects that you need help with or just want to get in touch.<br>
+							You can reach me at <a href="mailto:macweese@pm.me" target="_top">Macweese@pm.me</a>
+						</div>
+					</div>
+
+				</div>
+				
+
+			</div>
+			<!-- .row -->
+
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<form id="contact-form" role="form">
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+							</div>
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Message"></textarea>
+							</div>
+							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Send Message</button>
+						</div>
+						<div class="ajax-response"></div>
+						<div class="pfblock-line"></div>
+					</form>
+				</div>
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://github.com/macweese" target="_blank" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-4x fa-github"></i></a></li>
+					</ul>
+
+					<p class="note"> Made by Macweese © 2020</p>
+
+				</div>
+
+			</div>
+			<!-- .row -->
+		</div>
+		<!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#about"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<!--<script src="assets/js/smoothscroll.js"></script> -->
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/jquery.easypiechart.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/typing.js"></script>
+
+        </body>
+
 </html>
