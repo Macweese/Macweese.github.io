@@ -257,26 +257,24 @@
 }
 
 .leaflet-grab {
-    cursor: -webkit-grab;
-    cursor: -moz-grab;
+    cursor: none;
 }
 
 .leaflet-crosshair,
 .leaflet-crosshair .leaflet-interactive {
-    cursor: crosshair;
+    cursor: none;
 }
 
 .leaflet-popup-pane,
 .leaflet-control {
-    cursor: auto;
+    cursor: none;
 }
 
-.leaflet-dragging .leaflet-grab,
-.leaflet-dragging .leaflet-grab .leaflet-interactive,
+.leaflet-dragging .leaflet-crosshair,
+.leaflet-dragging .leaflet-crosshair .leaflet-interactive,
 .leaflet-dragging .leaflet-marker-draggable {
-    cursor: move;
-    cursor: -webkit-grabbing;
-    cursor: -moz-grabbing;
+    cursor: none;
+    cursor: none;
 }
 
 /* marker & overlays interactivity */
@@ -302,6 +300,11 @@
     outline: 0;
 }
 
+.banner {
+  width: 100%;
+  height: 20vh;
+  opacity: 0.2;
+}
 .leaflet-container a {
     color: #0078A8;
 }
@@ -363,7 +366,7 @@
 }
 
 .leaflet-bar a.leaflet-disabled {
-    cursor: default;
+    cursor: none;
     background-color: #f4f4f4;
     color: #bbb;
 }
