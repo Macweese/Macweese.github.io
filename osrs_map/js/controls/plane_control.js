@@ -8,8 +8,9 @@ export var PlaneControl = L.Control.extend({
     onAdd: function (map) {
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control noselect');
         container.style.background = 'none';
-        container.style.width = '70px';
+        container.style.width = '36px';
         container.style.height = 'auto';
+        
 
         var incrementPlaneButton = L.DomUtil.create('a', 'leaflet-bar leaflet-control leaflet-control-custom', container);
         incrementPlaneButton.id = 'increase-level';
