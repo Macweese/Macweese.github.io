@@ -47,28 +47,6 @@ export var CoordinatesControl = L.Control.extend({
             return;
         }
 
-//        var url = window.location.href;
-//        var str = "https://macweese.github.io/?centreX=3178&centreY=3495&centreZ=0&zoom=9";
-//        var xxxx = url.search("X=");
-//        var yyyy = url.search("Y=");
-//        var zzzz = url.search("Z=");
-//        var ZUrl = url.search("m=");
-//        console.log(xUrl);
-//        console.log(yUrl);
-//        console.log(zUrl);
-//        //var xUrlLength = xUrl+4;
-//        //var yUrlLength = yUrl+4;
-//        //var zUrlLength = zUrl+1;
-//        //var x = url.slice(xUrl, xUrlLength);
-//        //var y = url.slice(zUrl, yUrlLength);
-//        //var z = url.slice(yUrl, zUrlLength);
-//
-//        this._searchMarker = new L.marker(new Position(xUrl, yUrl, zUrl).toCentreLatLng(this._map));
-//
-//        this._searchMarker.addTo(this._map);
-//
-//        this._map.panTo(this._searchMarker.getLatLng());
-
         if (this._searchMarker !== undefined) {
             this._map.removeLayer(this._searchMarker);
         }
