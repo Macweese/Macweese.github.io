@@ -95,12 +95,12 @@ export var MapLabelControl = L.Control.extend({
         
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control noselect');
         container.style.background = 'none';
-        container.style.width = '100px';
+        container.style.width = '40px';
         container.style.height = 'auto';
 
         var labelsButton = L.DomUtil.create('a', 'leaflet-bar leaflet-control leaflet-control-custom', container);
         labelsButton.id = 'toggle-map-labels';
-        labelsButton.innerHTML = 'Toggle Labels';
+        labelsButton.innerHTML = '<i class="fa fa-map-signs" aria-hidden="true"</i>';
 
         L.DomEvent.on(labelsButton, 'click', this._toggleMapLabels, this);
 

@@ -17,7 +17,7 @@ export var LocationLookupControl = L.Control.extend({
         var locationInput = L.DomUtil.create('input', 'leaflet-bar leaflet-control leaflet-control-custom', container);
         locationInput.id = 'location-lookup';
         locationInput.type = 'text';
-        locationInput.placeholder = "Go to location";
+        locationInput.placeholder = "Search location";
 
         var self = this;
         Locations.getLocations(function(locations) {

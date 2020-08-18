@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
-    <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>
-    <script>window.addEventListener("load", function(){window.wpcc.init({
-        "colors":{
-            "popup":{
-                "background":"#000000",
-                "text":"#ffffff",
-                "border":"#f9f9f9"},
-            "button":{
-                "background":"#468087",
-                "text":"#ffffff"}
-                },
-            "padding":"none",
-            "margin":"small",
-            "transparency":"25",
-            "content":{
-                "button":"",
-                "message":"Special thanks to Explv 💯",
-                "link":""
-                }
-            })
-        });
-    </script>
+
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.2.0/leaflet.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,700|Roboto+Condensed:700' rel='stylesheet'>
+    <script src="http://cdn.leafletjs.com/leaflet/v1.2.0/leaflet.js"></script>
+    <script src="./js/controls/menu_control.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+        body {
+            font-family: 'Montserrat','Roboto';font-size: 22px;font-weight: 400;
+        }
+
+        </style>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Dk9wORF.png">
     <style>
         h1 {
             width: 100%;
@@ -59,6 +55,7 @@
 
     <link rel="stylesheet" href="css/main.css">
 
+
     <!-- Get jQuery JS from Google CDN, or fallback to local copy -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
@@ -88,16 +85,55 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.js"
         integrity="sha256-u74zWXS2T+G4E4NsM/R8gR8SaTJcq5a0TCks5m+AN9k=" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/5c7745fcd3.js" crossorigin="anonymous"></script>
+  
 
     <!-- Try to load main JS module -->
     <script type="module" src="js/map.js"></script>
+    <script src="js/map.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid" id="container">
+    
+	<input type="checkbox" id="navcheck" role="button" title="menu" style="left: -50px">
+	<label for="navcheck" aria-hidden="true" title="menu">
+		<span class="burger">
+			<span class="bar">
+				<span class="visuallyhidden">Menu</span>
+			</span>
+		</span>
+    </label>
+	<input type="checkbox" id="toolcheck" role="button" title="toolmenu" style="left: -50px">
+	<label for="toolcheck" aria-hidden="true" title="toolmenu">
+		<span class="chevron">
+			<span class="rightchevron">
+				<span class="visuallyhidden">Menu</span>
+			</span>
+		</span>
+    </label>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="https://macweese.github.io/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="https://github.com/Macweese"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+            <li><a href="https://discord.com/users/159941566994186240"><i class="fa fa-comments-o" aria-hidden="true"></i> Discord</a></li>
+        </ul>
+        <div class="extra">
+            <span>
+                <p style="font-size: 14px;">Are you a developer who needs a map with more tools?<br>Head over <a href="https://explv.github.io/">here</a></p>
+                <p>Special thanks to <a href="https://github.com/Explv/" style="font-size: 14px;" target="_blank">@Explv</a></p>
+            </span>
+        </div>
+        <div class="fixed"><i class="fa fa-copyright" style="font-size: 10px;" aria-hidden="true"></i> 2018-2020 Macweese<br>RuneScape and Old School RuneScape are the trademarks of Jagex Limited</div>
+    </nav>
+
+    <div class="container-fluid" id="container"></div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="map-container">
             <div id="map"></div>
+        </div>
     </div>
+
 </body>
 
 </html>

@@ -8,7 +8,7 @@ import { GridControl } from './controls/grid_control.js';
 import { LocationLookupControl } from './controls/location_lookup_control.js';
 import { MapLabelControl } from './controls/map_label_control.js';
 import { PlaneControl } from './controls/plane_control.js';
-import { TitleLabel } from './controls/title_label.js';
+import { MenuControl } from './controls/menu_control.js';
 import { Region } from './model/Region.js';
 
 $(document).ready(function () {
@@ -18,7 +18,9 @@ $(document).ready(function () {
     const urlCentreX = currentUrl.searchParams.get("centreX");
     const urlCentreY = currentUrl.searchParams.get("centreY");
     const urlCentreZ = currentUrl.searchParams.get("centreZ");
+    const urlRadius = currentUrl.searchParams.get("rad");
     const urlZoom = currentUrl.searchParams.get("zoom");
+    const urlArea = currentUrl.searchParams.get("area");
 
     var map = L.map('map', {
         //maxBounds: L.latLngBounds(L.latLng(-40, -180), L.latLng(85, 153))
@@ -47,10 +49,10 @@ $(document).ready(function () {
     map.getContainer().focus();
     map.addControl(new LocationLookupControl());
     map.addControl(new CoordinatesControl());
-    map.addControl(L.control.zoom());
-    map.addControl(new PlaneControl());
     map.addControl(new MapLabelControl());
     map.addControl(new GridControl());
+    map.addControl(L.control.zoom());
+    map.addControl(new PlaneControl());
 
     var prevMouseRect, prevMousePos;
     map.on('mousemove', function (e) {
@@ -78,12 +80,14 @@ $(document).ready(function () {
         window.history.replaceState(null, null, `?centreX=${centrePos.x}&centreY=${centrePos.y}&centreZ=${centrePos.z}&zoom=${zoom}`);
     };
 
+
+    
     map.on('move', setUrlParams);
     map.on('zoom', setUrlParams);
-
+    
     let zoom = 7;
     let centreLatLng = [-79, -137]
-
+    
     if (urlZoom) {
         zoom = urlZoom;
     }
@@ -92,6 +96,10 @@ $(document).ready(function () {
         const centrePos = new Position(Number(urlCentreX), Number(urlCentreY), Number(urlCentreZ));
         centreLatLng = centrePos.toLatLng(map);
     }
-
+    
     map.setView(centreLatLng, zoom)
+    
+
+
 });
+

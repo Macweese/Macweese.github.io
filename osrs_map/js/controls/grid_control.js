@@ -13,12 +13,12 @@ export var GridControl = L.Control.extend({
     onAdd: function (map) {
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control noselect');
         container.style.background = 'none';
-        container.style.width = '130px';
+        container.style.width = '40px';
         container.style.height = 'auto';
 
         var labelsButton = L.DomUtil.create('a', 'leaflet-bar leaflet-control leaflet-control-custom', container);
         labelsButton.id = 'toggle-region-grid';
-        labelsButton.innerHTML = 'Toggle Region Grid';
+        labelsButton.innerHTML = '<i class="fas fa-globe"></i>';
 
         this._gridFeatureGroup = this._createGridFeature();
         this._enabled = false;
