@@ -556,14 +556,15 @@ nav::before {
     list-style: none;
     padding-left: 3.5em;
     padding-top: 1.5em;
+    transition: opacity 0.5s ease-in-out;
   }
 .nav-links:hover > li { 
     opacity: 0.8;
-    transition: 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
   }
 .nav-links li:hover {
     opacity: 1;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 .nav-links a {
     padding-left: 3.5em;
@@ -571,6 +572,8 @@ nav::before {
     font-family: 'Montserrat','Roboto';font-size: 28px;font-weight: 400;
     text-decoration: none;
     list-style: none;
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out;
   }
 nav a {
       opacity: 0;
@@ -584,7 +587,7 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     transform: translateX(-100%);
-    transition: color .15s, transform .5s;
+    transition: color .15s, transform .5s, opacity 0.5s ease-in-out;
     transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
   }
 
