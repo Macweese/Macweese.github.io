@@ -14,7 +14,7 @@ export var PlaneControl = L.Control.extend({
 
         var incrementPlaneButton = L.DomUtil.create('a', 'leaflet-bar leaflet-control leaflet-control-custom', container);
         incrementPlaneButton.id = 'increase-level';
-        incrementPlaneButton.innerHTML = '<span class="fa-stack fa-1x" id="layer-down"><i class="fa fa-arrow-up fa-stack-1x" style="color:DodgerBlue; opacity: 0.8"></i><i class="fas fa-layer-group fa-stack-2x" style="opacity: 0.5"></i></span>';
+        incrementPlaneButton.innerHTML = '<span class="fa-stack fa-1x" id="layer-down"><i class="fa fa-arrow-up fa-stack-1x" style="color:DeepSkyBlue; opacity: 0.8"></i><i class="fas fa-layer-group fa-stack-2x" style="opacity: 0.5"></i></span>';
         L.DomEvent.on(incrementPlaneButton, 'click', this._increasePlane, this);
 
         var decrementPlaneButton = L.DomUtil.create('a', 'leaflet-bar leaflet-control leaflet-control-custom', container);
