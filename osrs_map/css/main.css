@@ -105,6 +105,11 @@ html, body {
     display: none;
   }
 
+.leaflet-bottom.leaflet-right {
+  opacity: 0;
+  z-index: -9001;
+}
+
 #edit-text {
     color: white;
   }
@@ -234,8 +239,11 @@ html, body {
 .leaflet-control:hover .fa.fa-arrow-down::before {
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
+  }
+.leaflet-touch .leaflet-control-layers,
+.leaflet-touch .leaflet-bar {
+  background-clip: border-box;
+  }
 .form-control {
     display: inline-block;
     padding-top: 4px;
@@ -246,20 +254,31 @@ html, body {
     opacity: 1;
   }
 .ui-autocomplete {
-    font: 2.5em/1.4 'Montserrat','Roboto';
+    font: 2.5em/1.4 monospace;
     font-size: 14px;
     z-index: 2000;
     border: 2px solid #121212aa;
     background-color: #121212cc;
     color: #ffffff80;
-    transition: 0.1s ease-in-out 0.1s;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
   }
 .ui-autocomplete:hover {
     background-color: #121212ee;
-    color: #ffffffff;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
-    transition: 0.1s ease-in-out 0.1s;
+    transition: all 1s ease-out;
   }
+li.ui-menu-item:hover {
+  font-weight: 900;
+  color: #ffffff33;
+  background-color: #76EE00;
+  transition: all 1s ease-in-out;
+}
+.ui-menu.ui-widget {
+  margin-left: -2px;
+  width: 198px;
+  border: none;
+}
 input.leaflet-control-custom {
     text-align: center;
     padding: 5px;
@@ -268,11 +287,22 @@ input.leaflet-control-custom {
     font-size: 14px;
   }
 .leaflet-control-custom form-group, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    text-align: center;
     background: none !important;
     color: white !important;
     display: inline;
     opacity: 0.8;
   }
+.leaflet-control-zoom.leaflet-bar.leaflet-control a {
+  display: block;
+  text-align: center;
+  left: -2px;
+  width: 36px;
+  background-clip: inherit;
+}
+.leaflet-control-zoom.leaflet-bar.leaflet-control a:first-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
 .form-group {
     margin-bottom: 0px;
   }
@@ -287,10 +317,11 @@ input.leaflet-control-custom {
     border: none;
     border-right: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 0px;
+    background-clip: inherit;
   }
 .coord:last-child {
-    border: 2px;
-    color: white;
+    border: 3px;
+    color: rgba(255, 255, 255, 0.7);
   }
 .leaflet-control {
     background-color: #121212 !important;/* #121212 */
@@ -304,7 +335,7 @@ input.leaflet-control-custom {
     width: 100% !important;
     border: none !important;
     border-radius: 0 0 0 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
     background-color: #fff;
   }
 .leaflet-control-custom:last-child {
@@ -416,13 +447,13 @@ label .burger .bar, label .burger::after {
     display: block;
     width: 80%;
     height: 9%;
-    background: white;
+    background: rgb(0, 0, 0);
     content: '';
     opacity: 0.8;
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 label .burger .bar {
-    top: 57%;
+    top: 58%;
   }
 label .burger::before {
     top: 26%;
@@ -675,6 +706,7 @@ nav a:hover {
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
   }
 [id="navcheck"]:checked + label .burger::after {
+    background: rgb(255, 255, 255);
     border-radius: 2px;
     transform: rotate(33deg) translateY(230%) translateX(-20%) scale(0.9);
     height: 0.2em;
@@ -682,11 +714,15 @@ nav a:hover {
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1)
   }
 [id="navcheck"]:checked + label .burger .bar {
+    background: rgb(255, 255, 255);
     transform: scale(0);
-    opacity: 0.01;
+    opacity: 0;
   }
 [id="navcheck"]:checked ~ nav {
     transform: translateX(0);
+  }
+[id="navcheck"]:checked ~ label .burger::before, label .burger .bar + label .burger::after {
+  background: rgb(255, 255, 255);
   }
 [id="navcheck"]:checked ~ nav::before {
     transform: skewX(0deg) translateX(0);

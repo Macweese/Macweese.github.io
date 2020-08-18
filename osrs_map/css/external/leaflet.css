@@ -328,7 +328,7 @@
     color: #ff00002a;
     }
 .leaflet-touch .leaflet-bar a {
-    width: 30px;
+    width: 36px;
     height: 30px;
     line-height: 30px;
     }
@@ -470,7 +470,7 @@
     }
 .leaflet-touch .leaflet-control-layers,
 .leaflet-touch .leaflet-bar {
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     background-clip: padding-box;
     display: inline-block;
     }

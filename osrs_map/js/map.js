@@ -80,8 +80,6 @@ $(document).ready(function () {
         window.history.replaceState(null, null, `?centreX=${centrePos.x}&centreY=${centrePos.y}&centreZ=${centrePos.z}&zoom=${zoom}`);
     };
 
-
-    
     map.on('move', setUrlParams);
     map.on('zoom', setUrlParams);
     
@@ -98,8 +96,6 @@ $(document).ready(function () {
     }
     
     map.setView(centreLatLng, zoom)
-    
-
 
 });
 
