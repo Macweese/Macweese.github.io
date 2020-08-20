@@ -203,17 +203,39 @@ html, body {
 
 .fa, .fa-map-sign {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 8px;
     opacity: 0.8;
   }
+#toggle-map-labels {
+  padding-bottom: 34px;
+}
 .fa-globe {
     font-size: 18px;
-    margin-top: 5px;
+    margin-top: 8px;
     opacity: 0.8;
   }
+#toggle-region-grid {
+  padding-bottom: 34px;
+}
 .fa-globe:hover {
     opacity: 1;
   }
+#location-lookup:focus {
+  box-shadow: 0px 0px 2px 2px #6198c3, 0 1px 5px rgba(0, 0, 0, 65) !important;
+  transition: box-shadow 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+#increase-level{
+  height: 34px;
+}
+#decrease-level{
+  height: 34px;
+}
+#layer-up {
+  margin-top: 5px;
+}
+#layer-down {
+  margin-top: 5px;
+}
 .fa-stack, .fa-1x {
     opacity: 1;
   }
@@ -286,6 +308,9 @@ input.leaflet-control-custom {
     font-family: monospace;
     font-size: 14px;
   }
+input.leaflet-control-custom:focus{
+    outline-width: 0px;
+  }
 .leaflet-control-custom form-group, .leaflet-control-zoom-in, .leaflet-control-zoom-out {
     text-align: center;
     background: none !important;
@@ -297,7 +322,7 @@ input.leaflet-control-custom {
   display: block;
   text-align: center;
   left: -2px;
-  width: 36px;
+  width: 40px;
   background-clip: inherit;
   }
 .leaflet-control-zoom.leaflet-bar.leaflet-control a:first-child {
@@ -312,7 +337,7 @@ input.leaflet-control-custom {
   }
 .coord {
     position: relative;
-    width: 65px !important;
+    width: 67px !important;
     height: auto;
     text-align: center;
     font-family: monospace;
@@ -372,35 +397,7 @@ input[type="number"] {
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
   }
-.leaflet-control-slidemenu{
-    position: relative;
-    cursor: pointer;
-    height: 50%;
-    margin-top: 100px;
-    z-index: -500;
-  }
-.leaflet-menu{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 255);
-    opacity: 0.8;
-    overflow: auto;
-    cursor: default;
-    z-index: 9999;
-    padding-left: 0.8em;
-    padding-top: 0.3em;
-  }
-.leaflet-menu-close-button{
-    background-color: transparent;
-    border: none;
-    font-size: 18pt;
-    color: rgb(100, 100, 100);
-    cursor: pointer;
-    padding-top: 0.2em;
-    padding-right: 0em;
-  }
-.leaflet-menu-close-button:hover{
-    color: rgb(180, 180, 180);
-  }
+
 
 
 /* burger - nav menu design */  
@@ -540,7 +537,7 @@ nav::before {
     left: 0;
     z-index: -1;
     width: 25em;
-    background-image: url("https://i.imgur.com/QwTUOmg.png");
+    background-image: url("./images/alchemicalhydra.png");
     background-color: black;
     background-position-x: center;
     background-repeat: no-repeat;
