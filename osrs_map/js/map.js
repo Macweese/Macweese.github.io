@@ -8,7 +8,6 @@ import { GridControl } from './controls/grid_control.js';
 import { LocationLookupControl } from './controls/location_lookup_control.js';
 import { MapLabelControl } from './controls/map_label_control.js';
 import { PlaneControl } from './controls/plane_control.js';
-import { MenuControl } from './controls/menu_control.js';
 import { Region } from './model/Region.js';
 
 $(document).ready(function () {
@@ -98,4 +97,3 @@ $(document).ready(function () {
     map.setView(centreLatLng, zoom)
 
 });
-

@@ -14,7 +14,7 @@ export var GridControl = L.Control.extend({
         var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control noselect');
         container.style.background = 'none';
         container.style.width = '40px';
-        container.style.height = 'auto';
+        container.style.height = '34px';
 
         var labelsButton = L.DomUtil.create('a', 'leaflet-bar leaflet-control leaflet-control-custom', container);
         labelsButton.id = 'toggle-region-grid';
