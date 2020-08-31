@@ -528,7 +528,7 @@ nav {
     /* material acceleration */
     transform: translateX(-120%);
     will-change: transform;
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 1.0s cubic-bezier(0.19, 1, 0.22, 1);
   }
 nav::before {
     position: absolute;
