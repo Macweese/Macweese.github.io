@@ -62,6 +62,7 @@ HCIM Victus
 HCIMPVP9
 HCIMpvpHCIM
 HCPVP19TDI
+HourOnMan
 HumanCourage
 HumanLogic
 im HCIMhello
