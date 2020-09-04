@@ -1,11 +1,12 @@
+PVP Broker
 0NLY-PVP-UIM
 25Mil Bounty
-999LLJW
+999LLJW-WhoTfIronAlt
 acesusano
 Acidic PvP
 AlundraHCPVP
 Am I In Vid
-AnArgonOne
+AnArgonOne-[#SMILXGBP6]
 Astray One
 BIGLIPAPE
 biglogdoggg
@@ -22,10 +23,10 @@ Ditzy HC
 dlh
 DLH 2
 DLH 3
-DMM Haze
+DMM Haze-Engineer HC
 DMM NOKIA
 dontafkagain
-DreamBroken
+DreamBroken-[#4B9UH1Q09]
 eliop
 fabs gu wu
 fartmanpvp43
@@ -37,17 +38,17 @@ Gl CEngineer
 Gl Hunting
 Gray Bain
 Hard Swan
-Hardcore DD
+Hardcore DD-Rush to 10m
 HardcorePP2
 HardPacifist
 HC BionicNip
 HC Ditzy
-HC Georgy177
-HC Gold King
+HC Georgy177-10hp 1 life
+HC Gold King-Zwei0
 Hc IronE PVP
 HC lilia
 HC NationRS
-HC NerfAGS
+HC NerfAGS-happy poptrt
 HC Nineveh
 HC PVP Eadz
 HC PVP Noob
@@ -58,7 +59,7 @@ HC Verf
 HCfrostbaner
 HCIM JETT
 HCIM PVP ACC
-HCIM Victus
+HCIM Victus-[#SI55ZXXYX]
 HCIMPVP9
 HCIMpvpHCIM
 HCPVP19TDI
@@ -72,7 +73,7 @@ imIMAPurPOP3
 Intento Dos
 Jesus but hc
 Kashinshin
-Killme Hcim
+Killme Hcim-RasanenPaivi
 LRD PVPHCIM
 Mlady Ufo
 Mylady Ufo
@@ -80,15 +81,16 @@ nmbliortusdj
 NO DYING OK
 NoPrayFlick
 not HCiron
-Pez PvPHCIM
-PVP Broker
+Pez PvPHCIM-Pez Fuerte
+plsdontcatch
 PvP GoDSpeeD
 PVP Lavitz
 PvP V Zuk
 PVP Verf
 PvpGoDSpeeD
-PVPHC SENSOH
+PVPHC SENSOH-H O S N E S
 QUEENJ0EL1EE
+SCOUTmeDADDY
 T4YLORY0L0
 Thin Cabbage
 TRAKTORlST
