@@ -40,6 +40,7 @@ Hard Swan
 Hardcore DD-Rush to 10m
 HardcorePP2
 HardPacifist
+HC1Maniac-ironP1D
 HC BionicNip
 HC Ditzy
 HC Georgy177-10hp 1 life
@@ -63,6 +64,7 @@ HCIMPVP9
 HCIMpvpHCIM
 HCPVP19TDI
 HourOnMan
+hrd fe pt3
 HumanCourage
 HumanLogic
 im HCIMhello
