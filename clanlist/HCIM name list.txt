@@ -1,5 +1,3 @@
-PvP Wijsheid
-Im Patient O
 0NLY-PVP-UIM
 24Gp Bounty
 25Mil Bounty
@@ -116,6 +114,8 @@ PVP HC JAD
 PVP Lavitz
 PvP V Zuk
 PVP Verf
+PvP Wijsheid
+Im Patient O
 PvpGoDSpeeD
 PVPHC SENSOH
 H O S N E S
@@ -128,6 +128,7 @@ Slwsh Web
 chaebaee
 SN ONE
 T4YLORY0L0
+The 3rd HCIM
 Thin Cabbage
 TRAKTORlST
 TTV_LoL_Nogs
