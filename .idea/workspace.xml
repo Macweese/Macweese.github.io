@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b4a46e3-1f4b-488c-a310-728ae67f7f16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/osrs_map/css/external/menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osrs_map/js/controls/menu_control.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/css/external/leaflet.css" beforeDir="false" afterPath="$PROJECT_DIR$/osrs_map/css/external/leaflet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/css/images/area-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/css/images/dax-path-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/css/images/path-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/css/images/polyarea-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/osrs_map/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/osrs_map/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/js/controls/location_lookup_control.js" beforeDir="false" afterPath="$PROJECT_DIR$/osrs_map/js/controls/location_lookup_control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/osrs_map/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/osrs_map/js/map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/Gregg Van Dycke Resume.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/website/assets/css/simple-line-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/assets/css/simple-line-icons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/assets/js/imagesloaded.pkgd.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/assets/js/imagesloaded.pkgd.js" afterDir="false" />
@@ -23,13 +34,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
