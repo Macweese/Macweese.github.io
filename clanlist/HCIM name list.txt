@@ -1,3 +1,4 @@
+HCIMDustPVP
 0NLY-PVP-UIM
 24Gp Bounty
 25Mil Bounty
@@ -5,6 +6,8 @@
 999LLJW
 acesusano
 Acidic PvP
+AIways Wins
+-Rowlancito
 AlundraHCPVP
 AnArgonOne
 Astray One
@@ -12,7 +15,7 @@ Ben Dover 1
 BIGLIPAPE
 biglogdoggg
 Buz
-AimPipUpMor3
+-AimPipUpMor3
 C E is scary
 Cams Uim
 CaronButPVP
@@ -44,13 +47,13 @@ Gl CEngineer
 Gl Hunting
 GodSpeed PVP
 GoinTyHard
-DFS pl0x
+-DFS pl0x
 Goodgri3fPVP
 Gray Bain
 H4RDC0R3
 Hard Swan
 Hardcore DD
-Rush to 10m
+-Rush to 10m
 HardcorePP2
 HardPacifist
 HC AtoomBlom
@@ -62,18 +65,18 @@ HC lilia
 HC NationRS
 HC NerfAGS
 HC PVP Eadz
+Hc PvP MCFS
 HC PVP Noob
 HC PVPonly01
 HC PVPonly02
 HC SleepyJoe
-HC BionicNip
+-HC BionicNip
 HC Tan Man
 HC Verf
 HCfrostbaner
 HCIM JETT
 HCIM PVP ACC
 HCIM Victus
-HCIMDustPVP
 HCIMPVP9
 HCIMpvpHCIM
 HCPVP19TDI
@@ -92,7 +95,7 @@ Jesus but hc
 Kashinshin
 Killme Hcim
 KimsIsDogSht
-ROFL HAHA XD
+-ROFL HAHA XD
 LRD PVPHCIM
 Lunar Lives
 MICH XANOV
@@ -121,13 +124,13 @@ PVP Verf
 PvP Wijsheid
 PvpGoDSpeeD
 PVPHC SENSOH
-H O S N E S
+-H O S N E S
 PVPsucks_UIM
 QUEENJ0EL1EE
 Relax1n
 Rylanor HCIM
 Saint Isaac
-HC Nineveh
+-HC Nineveh
 SN ONE
 T4YLORY0L0
 The 3rd HCIM
