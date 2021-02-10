@@ -7,6 +7,7 @@
         <meta name="description" content="Macweese | Software Engineer">
         <meta name="author" content="Macweese">
         <meta name="description" content="Macweese | Software Engineer"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Macweese Personal Site" />
@@ -489,22 +490,71 @@
 						<div class="pfblock-line"></div>
 						<div class="pfblock-subtitle">
 						
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Kanini clan members.txt"> Kanini clan members</a></br>
-        
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Frontline clan members.txt"> Frontline clan members</a></br>
-        
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Solidtag clan members.txt"> Solidtag clan members</a></br>
-        
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Wolves clan members.txt"> Wolves clan members </a></br>
+							<button type="button" class="collapsible">View</button>
+							<div class="content">
+
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Kanini clan members.txt"> Kanini clan members</a></br>
+
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Frontline clan members.txt"> Frontline clan members</a></br>
+	
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Solidtag clan members.txt"> Solidtag clan members</a></br>
+	
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Wolves clan members.txt"> Wolves clan members </a></br>
+	
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Blazers clan members.txt"> Blazers clan members </a></br>
+	
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/GroveStreetGang clan members.txt"> Grove Street Gang clan members </a></br>
+	
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/DreamTeam clan members.txt"> DreamTeam clan members </a></br>
+	
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/HCIM name list.txt"> PVP locked HCIM </a></br>
+
+							</div>
+
+							<script>
+								var coll = document.getElementsByClassName("collapsible");
+								var i;
+								
+								for (i = 0; i < coll.length; i++) {
+								  coll[i].addEventListener("click", function() {
+									this.classList.toggle("active");
+									var content = this.nextElementSibling;
+									if (content.style.display === "block") {
+									  content.style.display = "none";
+									} else {
+									  content.style.display = "block";
+									}
+								  });
+								}
+								</script>
 							
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Blazers clan members.txt"> Blazers clan members </a></br>
-
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/GroveStreetGang clan members.txt"> Grove Street Gang clan members </a></br>
-
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/DreamTeam clan members.txt"> DreamTeam clan members </a></br>
-							
-							<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/HCIM name list.txt"> PVP locked HCIM </a></br>
-
+							<style>
+								.content {
+									padding: 0 18px;
+									background-color: white;
+									max-height: 0;
+									overflow: hidden;
+									transition: max-height 0.2s ease-out;
+								}
+								</style>
+									
+									<script>
+										var coll = document.getElementsByClassName("collapsible");
+										var i;
+										
+										for (i = 0; i < coll.length; i++) {
+											coll[i].addEventListener("click", function() {
+												this.classList.toggle("active");
+												var content = this.nextElementSibling;
+												if (content.style.maxHeight){
+													content.style.maxHeight = null;
+												} else {
+													content.style.maxHeight = content.scrollHeight + "px";
+												}
+											});
+										}
+										</script>
+								
 						</div>
 					</div>
 				</div>
