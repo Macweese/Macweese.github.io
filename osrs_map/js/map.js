@@ -34,7 +34,7 @@ $(document).ready(function () {
         if (map.tile_layer !== undefined) {
             map.removeLayer(map.tile_layer);
         }
-        map.tile_layer = L.tileLayer('https://raw.githubusercontent.com/Macweese/osrs_map_full_2020_07_17/master/' + map.plane + '/{z}/{x}/{y}.png', {
+        map.tile_layer = L.tileLayer('https://raw.githubusercontent.com/Macweese/osrs_map_full_2021_01_10/master/' + map.plane + '/{z}/{x}/{y}.png', {
             minZoom: 4,
             maxZoom: 11,
             attribution: 'Map data',
