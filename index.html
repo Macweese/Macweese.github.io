@@ -493,68 +493,93 @@
 							<button type="button" class="collapsible">View</button>
 							<div class="content">
 
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Kanini clan members.txt"> Kanini clan members</a></br>
-
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Frontline clan members.txt"> Frontline clan members</a></br>
-	
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Solidtag clan members.txt"> Solidtag clan members</a></br>
-	
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Wolves clan members.txt"> Wolves clan members </a></br>
-	
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Blazers clan members.txt"> Blazers clan members </a></br>
-	
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/GroveStreetGang clan members.txt"> Grove Street Gang clan members </a></br>
-	
-								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/DreamTeam clan members.txt"> DreamTeam clan members </a></br>
-	
 								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/HCIM name list.txt"> PVP locked HCIM </a></br>
 
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Blazers clan members.txt"> Blazers</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Carnage clan members.txt"> Carnage</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/DreamTeam clan members.txt"> DreamTeam</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Envy clan members.txt"> Envy</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Frontline clan members.txt"> Frontline</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/GroveStreetGang clan members.txt"> GSG</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Kanini clan members.txt"> Kanini</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Solidtag clan members.txt"> Solidtag</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Unique clan members.txt"> Unique</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Wolves clan members.txt"> Wolves</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/Revenant clan members.txt"> Rev</a></br>
+								
+								<a href="https://raw.githubusercontent.com/Macweese/Macweese.github.io/master/clanlist/ReignOfTerror clan members.txt"> RoT</a></br>
+
 							</div>
+
+							<style>
+								.content 
+								{
+									padding: 0 18px;
+									background-color: white;
+									max-height: 0;
+									min-height: 0;
+									overflow: hidden;
+									transition: all 0.7s ease-in-out;
+								}
+							</style>
 
 							<script>
 								var coll = document.getElementsByClassName("collapsible");
 								var i;
 								
-								for (i = 0; i < coll.length; i++) {
-								  coll[i].addEventListener("click", function() {
+								for (i = 0; i < coll.length; i++) 
+								{
+								  coll[i].addEventListener("click", function() 
+								  {
 									this.classList.toggle("active");
 									var content = this.nextElementSibling;
-									if (content.style.display === "block") {
-									  content.style.display = "none";
+									if (content.style.display === "block") 
+									{
+										content.style.maxHeight = 0 + "px";
+										content.style.display = "none";
 									} else {
-									  content.style.display = "block";
+										content.style.display = "block";
 									}
+									//if  (content.style.maxHeight = 0 + "px")
+									//{
+									//	content.style.maxHeight = 416 + "px";
+									//} else {
+									//	content.style.maxHeight = 0 + "px";
+									//}
 								  });
 								}
-								</script>
-							
-							<style>
-								.content {
-									padding: 0 18px;
-									background-color: white;
-									max-height: 0;
-									overflow: hidden;
-									transition: max-height 0.2s ease-out;
-								}
-								</style>
-									
-									<script>
-										var coll = document.getElementsByClassName("collapsible");
-										var i;
-										
-										for (i = 0; i < coll.length; i++) {
-											coll[i].addEventListener("click", function() {
-												this.classList.toggle("active");
-												var content = this.nextElementSibling;
-												if (content.style.maxHeight){
-													content.style.maxHeight = null;
-												} else {
-													content.style.maxHeight = content.scrollHeight + "px";
-												}
-											});
-										}
-										</script>
+							</script>
+
+							<script>
+								var coll = document.getElementsByClassName("collapsible");
+								var i;
 								
+								for (i = 0; i < coll.length; i++) 
+								{
+									coll[i].addEventListener("click", function() 
+									{
+										this.classList.toggle("active");
+										var content = this.nextElementSibling;
+										if (content.style.maxHeight)
+										{
+											content.style.maxHeight = null;
+										} else {
+											content.style.maxHeight = content.scrollHeight + "px";
+										}
+									});
+								}
+							</script>
+
 						</div>
 					</div>
 				</div>
