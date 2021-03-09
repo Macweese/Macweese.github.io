@@ -52,7 +52,6 @@ Gray Bain
 H4RDC0R3
 Hard Swan
 Hardcore DD
-HardcorePP2
 HardPacifist
 HC AtoomBlom
 HC Ditzy
@@ -131,6 +130,8 @@ Rylanor HCIM
 Saint Isaac
 HC Nineveh
 SN ONE
+softcorepp2
+HardcorePP2
 T4YLORY0L0
 The 3rd HCIM
 Thin Cabbage
