@@ -46,7 +46,6 @@ Gl CEngineer
 Gl Hunting
 GodSpeed PVP
 GoinTyHard
-DFS pl0x
 Goodgri3fPVP
 Gray Bain
 H4RDC0R3
@@ -59,8 +58,8 @@ HC Georgy177
 HC Gold King
 Hc IronE PVP
 HC lilia
+HC MoonPie
 HC NationRS
-HC NerfAGS
 HC PVP Eadz
 Hc PvP MCFS
 HC PVP Noob
@@ -95,6 +94,8 @@ fabs gu wu
 Jesus but hc
 Kashinshin
 Killme Hcim
+Le froggie
+PVP HC Rata
 LRD PVPHCIM
 Lunar Lives
 MICH XANOV
@@ -114,7 +115,6 @@ PVP Broker
 PvP Clues
 PvP GoDSpeeD
 PVP HC JAD
-PVP HC Rata
 PVP Koen
 PVP Lavitz
 PvP Musiq
@@ -135,6 +135,8 @@ HardcorePP2
 T4YLORY0L0
 The 3rd HCIM
 Thin Cabbage
+Tigers Ass
+HC NerfAGS
 TRAKTORlST
 TTV_LoL_Nogs
 TTV PVP HCIM
