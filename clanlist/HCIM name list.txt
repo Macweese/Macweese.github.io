@@ -1,5 +1,3 @@
-hm for off
-hm4off
 0NLY-PVP-UIM
 24Gp Bounty
 25Mil Bounty
@@ -35,7 +33,6 @@ dontafkagain
 DontDbowPLZ
 DreamBroken
 Dx sdrawkcaB
-KimsIsDogSht
 eliop
 fartmanpvp43
 ffk
@@ -79,6 +76,8 @@ HCIMDustPVP
 HCIMPVP9
 HCIMpvpHCIM
 HCPVP19TDI
+hm for off
+hm4off
 HourOnMan
 hrd fe pt3
 HumanCourage
