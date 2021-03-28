@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta https-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,700|Roboto+Condensed:700' rel='stylesheet'>
+    <link rel="stylesheet"href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" async
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+        body {
+            font-family: 'Montserrat','Roboto';font-size: 22px;font-weight: 400;
+        }
+        </style>
+    <link rel="icon" type="image/png" href="https://i.imgur.com/Dk9wORF.png">
+    <style>
+        h1 {
+            width: 100%;
+            height: 20vh;
+            background: #000000;
+            opacity: 0.1;
+        }
+    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111933116-1"></script>
     <script>
@@ -10,33 +36,15 @@
         gtag('js', new Date());
         gtag('config', 'UA-111933116-1');
     </script>
-    <meta charset="utf-8" />
 
     <title>Macweese - OSRS Map</title>
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css"
         integrity="sha256-/PVkO2+mUlKqE6wgKVXU5Wh4mx3vncHAxLEdpXrziGo=" crossorigin="anonymous" />
@@ -72,17 +80,55 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.js"
         integrity="sha256-u74zWXS2T+G4E4NsM/R8gR8SaTJcq5a0TCks5m+AN9k=" crossorigin="anonymous"></script>
-
+    
+    <script src="https://kit.fontawesome.com/5c7745fcd3.js" crossorigin="anonymous"></script>
+  
     <!-- Try to load main JS module -->
     <script type="module" src="js/map.js"></script>
+    <script src="js/map.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid" id="container">
+ 
+    <input type="checkbox" id="navcheck" role="button" title="menu" style="left: -50px">
+    <label for="navcheck" aria-hidden="true" title="menu">
+	<span class="burger">
+		<span class="bar">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+    </label>
+    <input type="checkbox" id="toolcheck" role="button" title="toolmenu" style="left: -50px">
+    <label for="toolcheck" aria-hidden="true" title="toolmenu">
+	<span class="chevron">
+		<span class="rightchevron">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+    </label>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="https://macweese.github.io/#tools"><i class="fa fa-home" aria-hidden="true" style="font-size: 28px;"></i> Home</a></li>
+            <li><a href="https://github.com/Macweese"><i class="fa fa-github" aria-hidden="true" style="font-size: 28px;"></i> Github</a></li>
+            <li><a href="https://discord.com/users/159941566994186240"><i class="fab fa-discord" aria-hidden="true" style="font-size: 28px;"></i> Discord</a></li>
+        </ul>
+        <div class="extra">
+            <span>
+                <p>More features coming soon</p>
+                <p style="font-size: 14px;">Developed with <a href="https://leafletjs.com/">LeafletJS</a>, <a href="https://fontawesome.com/">FontAwesome</a> and <a href="https://github.com/kfricilone/OpenRS">OpenRS</a></p>
+            </span>
+        </div>
+        <div class="fixed"><i class="fa fa-copyright" style="font-size: 10px;" aria-hidden="true"></i> 2018-2020 Macweese<br>RuneScape and Old School RuneScape are the trademarks of Jagex Limited</div>
+    </nav>
+    <img src="./css/images/wmicon.png" style="position: absolute; bottom: 2%; right: 1%; z-index: 100; pointer-events: none; opacity: 0.2; width:60px;height:60px;" img src="https://i.imgur.com/Dk9wORF.png">
+    <footer id="wmname" style="position: absolute; bottom: 1%; right: 1%; z-index: 1; font-size: 14px; color: #cccccccc; pointer-events: none;"><i class="far fa-copyright"></i> 2018-2020 Macweese</footer>
+    <div class="container-fluid" id="container"></div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="map-container">
             <div id="map"></div>
         </div>
     </div>
+
 </body>
 
 </html>
